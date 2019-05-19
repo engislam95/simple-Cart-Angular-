@@ -1,0 +1,33 @@
+@import "../../assets/sass/varriable";
+@import "../../assets/sass/mixins";
+
+body
+{
+    @include background-image($backG, 100vh);
+}
+h1{color:#C9E9E4; padding-top:5%;  }
+label{
+    color:$white;
+    font-weight: bold ;
+    font-size: 20px; 
+}
+button{
+    @extend %btn;
+    background-color:#C9E9E4 ;
+    color:$white ; 
+    font-weight: bold ;
+    font-size: 20px; 
+}
+input.ng-invalid.ng-touched
+{
+    border:1px solid red  ;
+}
+.help-block 
+{
+    color:red; 
+}
+form
+{
+    padding: 5% 22%;
+
+}

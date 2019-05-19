@@ -1,0 +1,103 @@
+@import "../../assets/sass/varriable";
+@import "../../assets/sass/mixins";
+
+body 
+{
+    height: 2000px;
+}
+.container {
+    margin: $autoM;
+    padding: 0px;
+    width: 80%;
+}
+
+// ---------------------------header section---------------------
+header {
+    
+
+    @include background-image($backG, 600px);
+    position: relative;
+
+    nav {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        margin-bottom: 100px;
+
+       
+
+        .logo {
+            margin-right: 20%;
+            img{margin-right: 20%; }
+            ul {
+                margin-top: 5%;
+                display: $inline;
+                width: 62%;
+
+            }
+
+            li {
+                padding-right: 9%;
+                color: $white;
+                display: $inline;
+                list-style: none;
+                text-transform: uppercase;
+               
+            }
+            a{
+                color:$white; 
+            }
+          
+        }
+        .list {
+            i{
+                font-size:30px;
+                 margin-top: 14%;
+                  color: white; 
+                  display: $inline;
+                }
+            div {
+                background-color: red;
+                width: 20px;
+                height: 20px;
+                color: #ffff;
+                border-radius: 50%;
+                position: absolute;
+                top: 105;
+                top: 3%;
+                right: 18%; 
+            }
+            }
+
+    }
+
+    .header-content {
+        width: 50%;
+        color: $white;
+
+        .content {
+            margin-top: 30px;
+
+            h1 {
+                margin: 0px;
+
+                @include typoStyle($openSansFont, 40px, 600px);
+
+                text-transform: capitalize;
+            }
+
+            h5 {
+                @include typoStyle($openSansFont, 20px, 600px);
+
+                color: #BBE4DE;
+            }
+
+            a {
+                @extend %btn;
+            }
+
+            .second {
+                @extend %btn-bt;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "../../assets/sass/varriable";
+@import "../../assets/sass/mixins";
+
+a
+{
+    @extend %btn-bt ;
+    display: inline;
+    padding: 20px 11px;
+    margin-right: 10px;
+
+}
+h5{
+    color:rgb(70, 168, 154) ; 
+    font-weight: 600px;
+    font-size: 20px;
+    
+}
+p{color: rgb(212, 152, 150); font-weight: 600px;
+    font-size: 20px;}

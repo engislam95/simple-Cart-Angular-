@@ -1,0 +1,43 @@
+<body>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-12 col-sm-offset-1 col-md-offset-2">
+        <h1 class="text-center">Login</h1>
+      <form [formGroup]="login"  (ngSubmit)="onSubmit(login)">
+        <div id="user-data">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control" placeholder="Name...."  formControlName="username" >
+          </div>
+         
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Email...." formControlName="email" >
+            <span class="help-block" *ngIf="!login.get('email').valid 
+              && login.get('email').touched ">please Enter valid Email !</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="secret">Secret Questions</label>
+          <select id="secret" class="form-control"  formControlName="secretMsg">
+            <option value="pet" >Your first Pet?</option>
+            <option value="teacher" >Your first teacher?</option>
+          </select>
+        </div>
+        <!-- radio  -->
+        <div class="radio" *ngFor="let gender of genders">
+          <label>
+            <input type="radio" formControlName="gender"  [value]="gender">
+            {{gender}}
+          </label>
+        </div>
+        
+        <button (click)="loadHome()" [disabled]="login.invalid" class="btn " type="Login" >Login</button>
+        <button  (click)="login.reset()" class="btn " type="button" >Reset</button>
+        
+      </form>
+    </div>
+  </div>
+</div>
+</body>
