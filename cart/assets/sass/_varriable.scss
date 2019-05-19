@@ -1,0 +1,27 @@
+// vendors
+$vendors: "-moz-", "-webkit-", "-o-", "-ms-", ""; 
+
+// colors
+$gradientStartColor: #bc2bff;;
+$gradientEndColor: #7249fb;;
+$white:#ffff; 
+$black:#0000 ;
+$grey :rgb(100, 98, 98); 
+$shadow:rgba(0, 0, 0, 0.08); 
+
+//fonts
+$robotoFont: 'Roboto', sans-serif;
+$openSansFont: 'Open Sans', sans-serif;
+
+//images
+$bg-img:'../../assets/img/banner/home-banner.jpg';
+$backG:'../../assets/img/abstract-art-background-1037992.jpg';
+$logo : '../img/logo.png';
+$about:'../../assets/img/ballpen-blur-close-up-461077.jpg';
+$side:'../../assets/img/concept-daylight-facial-expression-2035864.jpg';
+$mobileImg:"../../assets/img/banner/right-mobile.png" ;
+$banner:"../../assets/banner/banner.jpg";
+// layout 
+$inline:inline-block ; 
+$autoM :0 auto; 
+$lignC:center ;
